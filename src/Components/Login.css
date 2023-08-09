@@ -1,0 +1,169 @@
+.mainBox {
+  width: 100%;
+}
+.navLogo {
+  width: 100%;
+  height: 90;
+  background-color: #dfdfdf;
+}
+.logoimg {
+  display: block;
+  margin: auto;
+}
+.loginContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}
+.aceImage {
+  height: 500px;
+  padding: 40px;
+}
+.loginInput {
+  height: 500px;
+}
+.usernameI {
+  width: 70%;
+  height: 60px;
+  border-color: transparent;
+  border: 1px solid #887e7e;
+  border-radius: 5px;
+  padding: 0 0 0 25px;
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: 400;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 21.79px;
+}
+.login2 {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+}
+.forgotPwd {
+  font-size: 16px;
+  color: #635c5c;
+  margin-left: 59.5%;
+  margin-top: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 21.79px;
+  font-weight: 400;
+}
+.loginBTN {
+  background: linear-gradient(#f54874, #ec008c);
+  width: 70%;
+  height: 60px;
+  border-color: transparent;
+  border-radius: 34px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32.68px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+}
+.loginImage {
+  width: 100%;
+  height: 100%;
+}
+
+.signupBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.colorGradient {
+  width: 80%;
+  height: 10px;
+  background-image: linear-gradient(to left, #ca4365, #c4c4c400);
+}
+.colorGradient2 {
+  width: 80%;
+  height: 10px;
+  background-image: linear-gradient(to right, #ca4365, #c4c4c400);
+  margin-left: -50%;
+}
+.signContent {
+  width: 40%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16.34px;
+}
+.icons {
+  width: 20%;
+  margin: auto;
+  display: flex;
+  margin-left: 30%;
+  margin-top: 2%;
+  gap: 20px;
+}
+.gIcon {
+  width: 50%;
+  height: 50%;
+  border: 1px solid #f89aee;
+  border-radius: 50%;
+  background-color: #ece9ec;
+  padding: 10px;
+}
+.google {
+  width: 100%;
+  height: 100%;
+}
+.facebook {
+  width: 100%;
+  height: 100%;
+  color: #1977f3;
+}
+.lowerImg {
+  width: 100%;
+  margin-top: -250px;
+}
+.lowerr {
+  width: 100%;
+}
+
+/* media-queries */
+
+@media all and (min-width: 651px) and (max-width: 1071px) {
+  .loginContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .forgotPwd {
+    margin-left: 57%;
+  }
+  .lowerImg {
+    margin-top: -100px;
+  }
+  .icons {
+    margin-left: 31%;
+  }
+  .signContent {
+    width: 50%;
+  }
+  .colorGradient2 {
+    margin-left: -40%;
+  }
+}
+@media all and (min-width: 320px) and (max-width: 650px) {
+  .loginContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .lowerImg {
+    margin-top: -100px;
+  }
+  .signContent {
+    width: 60%;
+  }
+  .colorGradient2 {
+    margin-left: -30%;
+  }
+  .icons {
+    margin-left: 33%;
+  }
+  .forgotPwd {
+    margin-left: 53%;
+  }
+}
