@@ -5,17 +5,24 @@ import loginImg from "../assets/login image.png";
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
 import lower from "../assets/Group 50.png";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Appcontext } from "../Context/AppContext";
 
-export const Login = () => {
+export const SignUp = () => {
   const [user, setUser] = useState({});
   const navigate = useNavigate();
-  const { handleLogin } = useContext(Appcontext);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setUser({ ...user, [name]: value });
   };
+
+  const navigateLogin = () => {
+    navigate("/login");
+    console.log("object");
+  };
+
+  const { handleSignup } = useContext(Appcontext);
 
   return (
     <div className="mainBox">
@@ -29,9 +36,9 @@ export const Login = () => {
         </div>
         <div className="loginInput">
           <div className="login2">
-            <h2>Login here!</h2>
+            <h2>Sign-UP here!</h2>
             <input
-              type="email"
+              type="text"
               className="usernameI"
               placeholder="Username or Email"
               onChange={handleChange}
@@ -46,12 +53,16 @@ export const Login = () => {
               name="password"
             />
             <p className="forgotPwd">Forgot Password?</p>
-            <button className="loginBTN" onClick={() => handleLogin(user)}>Login</button>
+            <button className="loginBTN" onClick={() => handleSignup(user)}>
+              Sign-UP
+            </button>
           </div>
 
           <div className="signupBox">
             <div className="colorGradient"></div>
-            <div className="signContent">Or Sign-up With</div>
+            <div className="signContent">
+              {/* <Link to="/login">Or Login</Link> */}
+            </div>
             <div className="colorGradient2"></div>
           </div>
 
