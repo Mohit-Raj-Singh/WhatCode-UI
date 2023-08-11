@@ -9,11 +9,11 @@ https://whatcode-app.vercel.app/
 
 ## Features
 List out the key features of your application.
--SignUP
--Login
--Fetching Cities
--Search
--Add to cart
+- SignUP
+- Login
+- Fetching Cities
+- Search
+- Add to cart
 - Two sizes of UI
 
 ## Installation & Getting started
