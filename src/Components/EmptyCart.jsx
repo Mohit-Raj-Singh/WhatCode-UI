@@ -1,5 +1,5 @@
 import React from "react";
-import "./EmptyCart.css";
+import "../Styles/EmptyCart.css"
 import cart from "../assets/image 5.png";
 import { NavbarCity } from "./NavbarCity";
 import { Footer } from "./Footer";

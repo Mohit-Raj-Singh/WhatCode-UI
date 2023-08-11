@@ -1,5 +1,5 @@
 import React from "react";
-import "./NavbarCity.css";
+import "../Styles/NavbarCity.css"
 import logo from "../assets/REFLECT 1.png";
 import pin from "../assets/location-pin 1.png";
 

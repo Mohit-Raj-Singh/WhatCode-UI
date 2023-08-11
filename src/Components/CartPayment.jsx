@@ -1,5 +1,5 @@
 import React from "react";
-import "./CartPayment.css";
+import "../Styles/CartPayment.css"
 import payment from "../assets/image 6.png";
 import { ShoppingBag } from "./ShoppingBag";
 

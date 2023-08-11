@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import "./Login.css";
+import "../Styles/Login.css"
 import logo from "../assets/REFLECT 1.png";
 import loginImg from "../assets/login image.png";
 import { FcGoogle } from "react-icons/fc";

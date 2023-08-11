@@ -1,5 +1,5 @@
 import React from "react";
-import "./ShopingBag.css";
+import "../Styles/ShopingBag.css"
 import { NavbarCity } from "./NavbarCity";
 import greenDot from "../assets/Ellipse 4.png";
 import orangeDot from "../assets/Ellipse 43.png";

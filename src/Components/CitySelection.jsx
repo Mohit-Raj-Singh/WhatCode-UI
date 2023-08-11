@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./CitySelection.css";
+import "../Styles/CitySelection.css"
 import logo from "../assets/REFLECT 1.png";
 import cart from "../assets/cart bag.png";
 import location from "../assets/location.png";
