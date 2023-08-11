@@ -1,8 +1,8 @@
 import React from "react";
-import "../Styles/EmptyCart.css"
+import "../Styles/EmptyCart.css";
 import cart from "../assets/image 5.png";
 import { NavbarCity } from "./NavbarCity";
-import { Footer } from "./Footer";
+import { FooterS } from "./FooterS";
 
 export const EmptyCart = () => {
   return (
@@ -17,7 +17,7 @@ export const EmptyCart = () => {
         <div className="cartContentE">Add Items to cart to get Started!</div>
       </div>
 
-<Footer />
+      <FooterS />
     </div>
   );
 };

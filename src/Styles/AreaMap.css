@@ -1,3 +1,93 @@
-.first{
-    border: 1px solid red;
+.areaBoxes {
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 70px;
+  margin-top: 30px;
+  height: 600px;
+}
+
+.gridAreaBox {
+  border: 1px solid;
+  border: 1px solid #66646434;
+}
+
+.box {
+  transition: background-color 0.3s;
+  height: 500px;
+  border: 1px solid #504b4b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box.hovered {
+  border: 5px solid rgb(205, 96, 96);
+  border-radius: 20px;
+}
+
+.box2.hovered {
+  border: 5px solid rgb(79, 160, 79);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.headAppear {
+  text-align: center;
+  color: rgb(79, 160, 79);
+}
+.headAppear2 {
+  text-align: center;
+  color: rgb(205, 96, 96);
+}
+.houseICon {
+  width: 100%;
+  height: 200px;
+  color: #504b4b;
+}
+.houseICon2 {
+  width: 100%;
+  height: 200px;
+  color: rgb(205, 96, 96);
+}
+.cartBtnAr{
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+.cartBtnBoxAr{
+    width: 20%;
+    height: 55px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    background-color: rgb(205, 96, 96);
+    border-radius: 25px;
+}
+
+/* media-queries */
+
+@media all and (min-width: 651px) and (max-width: 1171px) {
+  .areaBoxes {
+    height: 400px;
+  }
+  .box {
+    height: 400px;
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 650px) {
+  .areaBoxes {
+    height: 300px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .box {
+    height: 300px;
+  }
 }

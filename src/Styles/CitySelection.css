@@ -13,6 +13,10 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 5px;
+  cursor: pointer;
+}
+.logoBoxC{
+  cursor: pointer;
 }
 .goCart {
   display: block;
@@ -61,9 +65,7 @@
 }
 .searchInput {
   width: 100%;
-  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
   margin: auto;
-  /* padding: 15px; */
   border-radius: 30px;
   margin-top: 10px;
   background-color: #f7f7f7;

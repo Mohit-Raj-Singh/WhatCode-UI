@@ -16,7 +16,7 @@ const AppcontextProvider = ({ children }) => {
   const handleLogin = (user) => {
     let { email, password } = user;
     if (email && password) {
-      fetch("http://localhost:4500/users/login", {
+      fetch("https://clever-polo-shirt-toad.cyclic.app/users/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -43,7 +43,7 @@ const AppcontextProvider = ({ children }) => {
   const handleSignup = (user) => {
     let { email, password } = user;
     if (email && password) {
-      fetch("http://localhost:4500/users/register", {
+      fetch("https://clever-polo-shirt-toad.cyclic.app/users/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

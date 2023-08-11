@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../Styles/CitySelection.css"
+import "../Styles/CitySelection.css";
 import logo from "../assets/REFLECT 1.png";
 import cart from "../assets/cart bag.png";
 import location from "../assets/location.png";
@@ -34,7 +34,7 @@ export const CitySelection = () => {
   const fetchCities = async () => {
     setLoading(true);
     try {
-      const response = await axios.get("http://localhost:4500/cities");
+      const response = await axios.get("https://clever-polo-shirt-toad.cyclic.app/cities");
       setData(response.data);
       setLoading(false);
     } catch (err) {
@@ -51,14 +51,22 @@ export const CitySelection = () => {
     navigate(`/book/${cityname}`);
   };
 
+  const navigateToEcart = () => {
+    navigate("/ecart");
+  };
+
+  const navigateToHome=()=>{
+    navigate("/")
+  }
+
   return (
     <div>
       <div className="navbarC">
         <div className="noneC"></div>
-        <div className="logoBoxC">
+        <div className="logoBoxC" onClick={navigateToHome}>
           <img src={logo} alt="" className="logoC" />
         </div>
-        <div className="cartBtn">
+        <div className="cartBtn" onClick={navigateToEcart}>
           <div className="goCart">Go to Cart</div>
           <div className="cartIC">
             <img src={cart} alt="" />

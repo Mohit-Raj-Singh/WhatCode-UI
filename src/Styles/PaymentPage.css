@@ -1,0 +1,62 @@
+.payment-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #a4a4a4;
+  border-radius: 20px;
+}
+
+.payment-form {
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.upi-button {
+  background-color: #e53935;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.submit-button {
+  background-color: #021f3c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 768px) {
+  .payment-container {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .payment-form {
+    padding: 10px;
+  }
+}

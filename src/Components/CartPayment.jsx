@@ -1,15 +1,17 @@
 import React from "react";
-import "../Styles/CartPayment.css"
-import payment from "../assets/image 6.png";
-import { ShoppingBag } from "./ShoppingBag";
+import "../Styles/CartPayment.css";
+import { BlurShooping } from "./BlurShopping";
+import { PaymentPage } from "./PaymentPage";
 
 export const CartPayment = () => {
   return (
     <div className="container">
       <div className="blur-background">
-        <ShoppingBag />
+        <BlurShooping />
       </div>
-      <img className="centered-image" src={payment} alt="Centered" />
+      <div className="centered-image">
+        <PaymentPage />
+      </div>
     </div>
   );
 };

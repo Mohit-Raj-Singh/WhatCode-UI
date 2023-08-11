@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import "../Styles/Login.css"
+import "../Styles/Login.css";
 import logo from "../assets/REFLECT 1.png";
 import loginImg from "../assets/login image.png";
 import { FcGoogle } from "react-icons/fc";
@@ -46,12 +46,14 @@ export const Login = () => {
               name="password"
             />
             <p className="forgotPwd">Forgot Password?</p>
-            <button className="loginBTN" onClick={() => handleLogin(user)}>Login</button>
+            <button className="loginBTN" onClick={() => handleLogin(user)}>
+              Login
+            </button>
           </div>
 
           <div className="signupBox">
             <div className="colorGradient"></div>
-            <div className="signContent">Or Sign-up With</div>
+            <div className="signContent"></div>
             <div className="colorGradient2"></div>
           </div>
 

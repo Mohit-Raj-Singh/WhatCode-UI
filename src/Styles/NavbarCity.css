@@ -3,10 +3,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 38%;
-  /* height: 40px; */
-  /* padding: 10px; */
   background-color: #dfdfdf;
-  /* background-color: chocolate; */
 }
 .locationBTNE {
   width: 165px;
@@ -16,6 +13,10 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 5px;
+  cursor: pointer;
+}
+.logoboxE {
+  cursor: pointer;
 }
 
 .cityE {

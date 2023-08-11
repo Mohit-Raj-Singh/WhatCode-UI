@@ -5,7 +5,7 @@ import loginImg from "../assets/login image.png";
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
 import lower from "../assets/Group 50.png";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Appcontext } from "../Context/AppContext";
 
 export const SignUp = () => {
@@ -60,9 +60,7 @@ export const SignUp = () => {
 
           <div className="signupBox">
             <div className="colorGradient"></div>
-            <div className="signContent">
-              {/* <Link to="/login">Or Login</Link> */}
-            </div>
+            <div className="signContent"></div>
             <div className="colorGradient2"></div>
           </div>
 
